@@ -8,13 +8,13 @@
   },
   "servers": [
     {
-      "id": "mingcha-1.21.4",
+      "id": "mingcha-1.20.1",
       "name": "mingcha",
-      "description": "mingcha Running Minecraft 1.21.4 (Fabric v0.17.2)",
+      "description": "mingcha Running Minecraft 1.20.1 (Forge v47.4.13)",
       "icon": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/serverIMG.png",
-      "version": "1.0.1",
+      "version": "1.0.0",
       "address": "220.79.201.74",
-      "minecraftVersion": "1.21.4",
+      "minecraftVersion": "1.20.1",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
@@ -24,324 +24,512 @@
       "autoconnect": true,
       "modules": [
         {
-          "id": "net.fabricmc:fabric-loader:0.17.2",
-          "name": "Fabric (fabric-loader)",
-          "type": "Fabric",
+          "id": "net.minecraftforge:lowcodelanguage:1.20.1-47.4.13",
+          "name": "Minecraft Forge (lowcodelanguage)",
+          "type": "ForgeHosted",
+          "classpath": true,
           "artifact": {
-            "size": 1915305,
-            "MD5": "72dd698d701202d46303fc913cfcbf23",
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/net/fabricmc/fabric-loader/0.17.2/fabric-loader-0.17.2.jar"
+            "size": 7394,
+            "MD5": "1802fa5a2d337d6660438e353b3b50cd",
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/lowcodelanguage/1.20.1-47.4.13/lowcodelanguage-1.20.1-47.4.13.jar"
           },
           "subModules": [
             {
-              "id": "1.21.4-fabric-0.17.2",
-              "name": "Fabric (version.json)",
+              "id": "1.20.1-47.4.13",
+              "name": "Minecraft Forge (version.json)",
               "type": "VersionManifest",
               "artifact": {
-                "size": 2847,
-                "MD5": "07f3150d655702033f2976aa023553e8",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/versions/1.21.4-fabric-0.17.2/1.21.4-fabric-0.17.2.json"
+                "size": 16554,
+                "MD5": "1a3573e11d61bfb2a22ea146bf8b0a60",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/versions/1.20.1-forge-47.4.13/1.20.1-forge-47.4.13.json"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlcore:1.20.1-47.4.13",
+              "name": "Minecraft Forge (fmlcore)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 118909,
+                "MD5": "dc8fe299b39fe48ecb085b21da31db6c",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/fmlcore/1.20.1-47.4.13/fmlcore-1.20.1-47.4.13.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.20.1-47.4.13",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 16850,
+                "MD5": "8d35cf4f3bf9704c64babb6472336ffd",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/javafmllanguage/1.20.1-47.4.13/javafmllanguage-1.20.1-47.4.13.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.20.1-47.4.13",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 4993,
+                "MD5": "b3fbe1f92e7bb2e249e5a71b87f74a35",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/mclanguage/1.20.1-47.4.13/mclanguage-1.20.1-47.4.13.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.20.1-47.4.13:universal",
+              "name": "Minecraft Forge (universal jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 2506787,
+                "MD5": "dd06b245ea75208c848680660b0b7c21",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/forge/1.20.1-47.4.13/forge-1.20.1-47.4.13-universal.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.20.1-47.4.13:client",
+              "name": "Minecraft Forge (client jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 4848366,
+                "MD5": "5c4d8867f3152f9c397859436a06321c",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/forge/1.20.1-47.4.13/forge-1.20.1-47.4.13-client.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.20.1-20230612.114412:srg",
+              "name": "Minecraft Forge (client srg)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 18842082,
+                "MD5": "8bfacfba4f54cda741019756165c5ecf",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-srg.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.20.1-20230612.114412:slim",
+              "name": "Minecraft Forge (client slim)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 12592249,
+                "MD5": "28edebec7b5a007bc9961ee9bab4d764",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-slim.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.20.1-20230612.114412:extra",
+              "name": "Minecraft Forge (client extra)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 10436626,
+                "MD5": "da6bb1a2c23108392fd6c103da40867c",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraft/client/1.20.1-20230612.114412/client-1.20.1-20230612.114412-extra.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "cpw.mods:securejarhandler:2.1.10",
+              "name": "Minecraft Forge (securejarhandler)",
+              "type": "Library",
+              "artifact": {
+                "size": 88749,
+                "MD5": "d9ff48d1c68388270388b803fa42611e",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar"
               }
             },
             {
               "id": "org.ow2.asm:asm:9.8",
-              "name": "Fabric (asm)",
+              "name": "Minecraft Forge (asm)",
               "type": "Library",
               "artifact": {
                 "size": 126113,
                 "MD5": "f5adf3bfc54fb3d2cd8e3a1f275084bc",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/org/ow2/asm/asm/9.8/asm-9.8.jar"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm-analysis:9.8",
-              "name": "Fabric (asm-analysis)",
-              "type": "Library",
-              "artifact": {
-                "size": 35151,
-                "MD5": "3d63508405f5610fc2ea673ff5471553",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar"
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/ow2/asm/asm/9.8/asm-9.8.jar"
               }
             },
             {
               "id": "org.ow2.asm:asm-commons:9.8",
-              "name": "Fabric (asm-commons)",
+              "name": "Minecraft Forge (asm-commons)",
               "type": "Library",
               "artifact": {
                 "size": 73498,
                 "MD5": "c8c3d9ccf240144e74d94ff658b024c9",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar"
               }
             },
             {
               "id": "org.ow2.asm:asm-tree:9.8",
-              "name": "Fabric (asm-tree)",
+              "name": "Minecraft Forge (asm-tree)",
               "type": "Library",
               "artifact": {
                 "size": 51934,
                 "MD5": "4ab1aaec43c77a2d9b56e6d6d496f705",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar"
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar"
               }
             },
             {
               "id": "org.ow2.asm:asm-util:9.8",
-              "name": "Fabric (asm-util)",
+              "name": "Minecraft Forge (asm-util)",
               "type": "Library",
               "artifact": {
                 "size": 94559,
                 "MD5": "62498ef324bdab15f407d703f7d78d19",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar"
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/ow2/asm/asm-util/9.8/asm-util-9.8.jar"
               }
             },
             {
-              "id": "net.fabricmc:sponge-mixin:0.16.3+mixin.0.8.7",
-              "name": "Fabric (sponge-mixin)",
+              "id": "org.ow2.asm:asm-analysis:9.8",
+              "name": "Minecraft Forge (asm-analysis)",
               "type": "Library",
               "artifact": {
-                "size": 1504156,
-                "MD5": "aa4a43d5b0e9abf4fcb57520ffeb0019",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/net/fabricmc/sponge-mixin/0.16.3+mixin.0.8.7/sponge-mixin-0.16.3+mixin.0.8.7.jar"
+                "size": 35151,
+                "MD5": "3d63508405f5610fc2ea673ff5471553",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/ow2/asm/asm-analysis/9.8/asm-analysis-9.8.jar"
               }
             },
             {
-              "id": "net.fabricmc:intermediary:1.21.4",
-              "name": "Fabric (intermediary)",
+              "id": "net.minecraftforge:accesstransformers:8.0.4",
+              "name": "Minecraft Forge (accesstransformers)",
               "type": "Library",
               "artifact": {
-                "size": 701826,
-                "MD5": "d0f4187a62328d4a95f3428434efbd48",
-                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/repo/lib/net/fabricmc/intermediary/1.21.4/intermediary-1.21.4.jar"
+                "size": 77756,
+                "MD5": "f0d3533f9437ba4428eaee9f28f7ecd9",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar"
+              }
+            },
+            {
+              "id": "org.antlr:antlr4-runtime:4.9.1",
+              "name": "Minecraft Forge (antlr4-runtime)",
+              "type": "Library",
+              "artifact": {
+                "size": 337868,
+                "MD5": "0dcc4b860d5d8d2852ab94d58c56ca2d",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:eventbus:6.0.5",
+              "name": "Minecraft Forge (eventbus)",
+              "type": "Library",
+              "artifact": {
+                "size": 53985,
+                "MD5": "2a6245210b446b2144071e71ca13432b",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/eventbus/6.0.5/eventbus-6.0.5.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:forgespi:7.0.1",
+              "name": "Minecraft Forge (forgespi)",
+              "type": "Library",
+              "artifact": {
+                "size": 29831,
+                "MD5": "bd34d20287dc95201fe9475a8bbc2540",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/forgespi/7.0.1/forgespi-7.0.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:coremods:5.2.4",
+              "name": "Minecraft Forge (coremods)",
+              "type": "Library",
+              "artifact": {
+                "size": 31872,
+                "MD5": "5295505357ba9b98450c5e3121f82191",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/coremods/5.2.4/coremods-5.2.4.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:modlauncher:10.0.9",
+              "name": "Minecraft Forge (modlauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 130343,
+                "MD5": "07507d18d72661f8ae6a5da75bbf35be",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/cpw/mods/modlauncher/10.0.9/modlauncher-10.0.9.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:unsafe:0.2.0",
+              "name": "Minecraft Forge (unsafe)",
+              "type": "Library",
+              "artifact": {
+                "size": 2834,
+                "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:mergetool:1.1.5:api",
+              "name": "Minecraft Forge (mergetool)",
+              "type": "Library",
+              "artifact": {
+                "size": 2572,
+                "MD5": "8df9c5bf87d004ddb884eca99bc2a4b1",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/mergetool/1.1.5/mergetool-1.1.5-api.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.6.4",
+              "name": "Minecraft Forge (core)",
+              "type": "Library",
+              "artifact": {
+                "size": 199834,
+                "MD5": "d83ab07267e402131fb93d899a57f5cd",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.6.4",
+              "name": "Minecraft Forge (toml)",
+              "type": "Library",
+              "artifact": {
+                "size": 31816,
+                "MD5": "bc95d0709fff2164b01fd09fbc988be8",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.8.5",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 58077,
+                "MD5": "ce473b0d9fbfd10fe147f03fe8707d67",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
+              }
+            },
+            {
+              "id": "net.jodah:typetools:0.6.3",
+              "name": "Minecraft Forge (typetools)",
+              "type": "Library",
+              "artifact": {
+                "size": 18281,
+                "MD5": "d4a375bf382f726cf1a650ccb38a736c",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.2.0",
+              "name": "Minecraft Forge (terminalconsoleappender)",
+              "type": "Library",
+              "artifact": {
+                "size": 15977,
+                "MD5": "679363fa893293791e55a21f81342f87",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.12.1",
+              "name": "Minecraft Forge (jline-reader)",
+              "type": "Library",
+              "artifact": {
+                "size": 150765,
+                "MD5": "a2e7b012cd9802f83321187409174a94",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.12.1",
+              "name": "Minecraft Forge (jline-terminal)",
+              "type": "Library",
+              "artifact": {
+                "size": 211712,
+                "MD5": "3c52be5ab5e3847be6e62269de924cb0",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.spongepowered:mixin:0.8.5",
+              "name": "Minecraft Forge (mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1089277,
+                "MD5": "19b3a2ae9e445a6e626fd7d1648cfcb8",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.4",
+              "name": "Minecraft Forge (nashorn-core)",
+              "type": "Library",
+              "artifact": {
+                "size": 2167292,
+                "MD5": "a9b3360e6a486cf62c1952c7816b7d97",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarSelector:0.3.19",
+              "name": "Minecraft Forge (JarJarSelector)",
+              "type": "Library",
+              "artifact": {
+                "size": 17374,
+                "MD5": "2bb6cbe0e6c6fbcd8f92d2e6b1ea678e",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/JarJarSelector/0.3.19/JarJarSelector-0.3.19.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarMetadata:0.3.19",
+              "name": "Minecraft Forge (JarJarMetadata)",
+              "type": "Library",
+              "artifact": {
+                "size": 15895,
+                "MD5": "9633546d299d4282ca68d10582be1c8f",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/JarJarMetadata/0.3.19/JarJarMetadata-0.3.19.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:bootstraplauncher:1.1.2",
+              "name": "Minecraft Forge (bootstraplauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 8284,
+                "MD5": "48f5255aa337344c467c0150d347813d",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.19",
+              "name": "Minecraft Forge (JarJarFileSystems)",
+              "type": "Library",
+              "artifact": {
+                "size": 32195,
+                "MD5": "c2be1a88b63eb1b58b00ab6e498cd97d",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlloader:1.20.1-47.4.13",
+              "name": "Minecraft Forge (fmlloader)",
+              "type": "Library",
+              "artifact": {
+                "size": 269262,
+                "MD5": "96bc3cf7132fe5903457662754c14bec",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/fmlloader/1.20.1-47.4.13/fmlloader-1.20.1-47.4.13.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlearlydisplay:1.20.1-47.4.13",
+              "name": "Minecraft Forge (fmlearlydisplay)",
+              "type": "Library",
+              "artifact": {
+                "size": 170512,
+                "MD5": "22318c2b6fb4319b59554c8965b0cbc9",
+                "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/repo/lib/net/minecraftforge/fmlearlydisplay/1.20.1-47.4.13/fmlearlydisplay-1.20.1-47.4.13.jar"
               }
             }
           ]
         },
         {
-          "id": "net.blay09.mods.balm:balm-fabric:21.4.1@jar",
-          "name": "Balm",
-          "type": "FabricMod",
+          "id": "com.mrcrayfish.furniture:cfm:7.0.0-pre36@jar",
+          "name": "MrCrayfish's Furniture Mod",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 417831,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/balm-fabric-1.21.4-21.4.1.jar",
-            "MD5": "348af25c46075912871a381a48c5791d"
+            "size": 2613393,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/cfm-forge-1.20.1-7.0.0-pre36.jar",
+            "MD5": "faf78627dad9c9c04e7a4fa8992c54dc"
           }
         },
         {
-          "id": "de.johni0702.minecraft:bobby:5.2.6+mc1.21.4@jar",
-          "name": "Bobby",
-          "type": "FabricMod",
+          "id": "me.shedaniel.clothconfig:cloth_config:11.1.136@jar",
+          "name": "Cloth Config v10 API",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 867333,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/bobby-5.2.6+mc1.21.4.jar",
-            "MD5": "b2b5f9dcee366c326dc5643e796cc2dc"
+            "size": 1181413,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/cloth-config-11.1.136-forge.jar",
+            "MD5": "ca5de5acbcb4a30c010aa6953bd7ef53"
           }
         },
         {
-          "id": "generated.fabricmod:caramelchat:mc1.21.1-forge-1.2.2@jar",
-          "name": "CaramelChat",
-          "type": "FabricMod",
+          "id": "kr.cosine:cookingview:1.0.0@jar",
+          "name": "CookingView",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 346360,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/optionalon/caramelChat-mc1.21.1-forge-1.2.2.jar",
-            "MD5": "41f15cc917b3cf1decf624c717c29e6e"
-          },
-          "required": {
-            "value": false
+            "size": 54293,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/cookingview-1.0.0.jar",
+            "MD5": "5bda842808b0628cd590171f28077b11"
           }
         },
         {
-          "id": "me.shedaniel.autoconfig.example:cloth-config:17.0.144@jar",
-          "name": "Cloth Config v17",
-          "type": "FabricMod",
+          "id": "com.seibel:distanthorizons:2.3.6-b@jar",
+          "name": "Distant Horizons",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 1152857,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/cloth-config-17.0.144-fabric.jar",
-            "MD5": "07b7d5bc15bdc7387cf8890d0c460b54"
+            "size": 25362721,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/DistantHorizons-2.3.6-b-1.20.1-fabric-forge.jar",
+            "MD5": "6dc56520b57c27f1c4cf3b5026130ca2"
           }
         },
         {
-          "id": "me.pepperbell:continuity:3.0.0+1.21.4@jar",
-          "name": "Continuity",
-          "type": "FabricMod",
+          "id": "vectorwing.farmersdelight:farmersdelight:1.20.1-1.2.9@jar",
+          "name": "Farmer's Delight",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 1001061,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/continuity-3.0.0+1.21.4.jar",
-            "MD5": "cb5480ac95db653d5376ec1b41797b56"
+            "size": 2978080,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/FarmersDelight-1.20.1-1.2.9.jar",
+            "MD5": "71e177a98e0e6f399761ad00e978d177"
           }
         },
         {
-          "id": "com.cupboard:cupboard:1.21-2.9@jar",
-          "name": "Cupboard",
-          "type": "FabricMod",
+          "id": "com.mrcrayfish:framework:0.7.15@jar",
+          "name": "Framework",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 23781,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/cupboard-fabric-1.21-2.9.jar",
-            "MD5": "a94bfab1f1eff3cc9e7493f3aa8d2dbb"
+            "size": 309560,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/framework-forge-1.20.1-0.7.15.jar",
+            "MD5": "135716c910b1036a6dd2f0fe0bc7b03d"
           }
         },
         {
-          "id": "net.blay09.mods:defaultoptions:21.4.5@jar",
-          "name": "Default Options",
-          "type": "FabricMod",
+          "id": "kr.cosine:freshfood:1.0.0@jar",
+          "name": "FreshFood",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 98192,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/defaultoptions-fabric-1.21.4-21.4.5.jar",
-            "MD5": "e0b4098324c1d946864e5d3ade95046c"
+            "size": 9809,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/freshfood-1.0.0.jar",
+            "MD5": "5b2efdaee000b87e0728d0844aab9f05"
           }
         },
         {
-          "id": "generated.fabricmod:fabric-api:0.119.3+1.21.4@jar",
-          "name": "Fabric API",
-          "type": "FabricMod",
+          "id": "mezz.jei:jei:15.20.0.117@jar",
+          "name": "Just Enough Items",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 2148367,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/fabric-api-0.119.3+1.21.4.jar",
-            "MD5": "179994db46a00373614c47fb669d1dd3"
+            "size": 1408016,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/jei-1.20.1-forge-15.20.0.117.jar",
+            "MD5": "347e78569c6983a2402d21a7770d07ad"
           }
         },
         {
-          "id": "generated.fabricmod:iris:1.8.8+mc1.21.4@jar",
-          "name": "Iris",
-          "type": "FabricMod",
+          "id": "generated.forgemod:modmenu:7.2.2@jar",
+          "name": "Modmenu",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 2682702,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/iris-fabric-1.8.8+mc1.21.4.jar",
-            "MD5": "59d373e4874efbcb8fb426bdefa588d9"
+            "size": 721366,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/modmenu-7.2.2.jar",
+            "MD5": "2629511a2d3b141d9f2a24dc9685637e"
           }
         },
         {
-          "id": "journeymap:journeymap:1.21.4-6.0.0-beta.47@jar",
-          "name": "Journeymap",
-          "type": "FabricMod",
+          "id": "com.mrcrayfish.furniture.refurbished:refurbished_furniture:1.0.20@jar",
+          "name": "MrCrayfish's Furniture Mod: Refurbished",
+          "type": "ForgeMod",
           "artifact": {
-            "size": 3514383,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/journeymap-fabric-1.21.4-6.0.0-beta.47.jar",
-            "MD5": "8b092f8cca0a96d80eb8eeea24b5ebfd"
-          }
-        },
-        {
-          "id": "com.hyfata.najoan:koreanpatch:1.9.0+mc1.21.3@jar",
-          "name": "Korean Patch",
-          "type": "FabricMod",
-          "artifact": {
-            "size": 595318,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/optionalon/koreanpatch-fabric-1.9.0+mc1.21.3.jar",
-            "MD5": "f06ab7fa4807353a7b725f4ad5dc86ba"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.terraformersmc:modmenu:13.0.3@jar",
-          "name": "Mod Menu",
-          "type": "FabricMod",
-          "artifact": {
-            "size": 1050777,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/modmenu-13.0.3.jar",
-            "MD5": "e8884b37fe775f30a0121c4fbdfb32ac"
-          }
-        },
-        {
-          "id": "su.plo.voice:plasmovoice:2.1.2@jar",
-          "name": "Plasmo Voice",
-          "type": "FabricMod",
-          "artifact": {
-            "size": 11913348,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/plasmovoice-fabric-1.21.4-2.1.2.jar",
-            "MD5": "f16c7adcd044e70ff30f39fd9e4ad524"
-          }
-        },
-        {
-          "id": "generated.fabricmod:reeses-sodium-options:1.8.2+mc1.21.4@jar",
-          "name": "Reese's Sodium Options",
-          "type": "FabricMod",
-          "artifact": {
-            "size": 81062,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/reeses-sodium-options-fabric-1.8.2+mc1.21.4.jar",
-            "MD5": "fe867d6df4c5946f45ebdf3c1c560735"
-          }
-        },
-        {
-          "id": "net.caffeinemc.mods:sodium:0.6.13+mc1.21.4@jar",
-          "name": "Sodium",
-          "type": "FabricMod",
-          "artifact": {
-            "size": 1306799,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/sodium-fabric-0.6.13+mc1.21.4.jar",
-            "MD5": "28922a78d1876ee062e3265f10abcc46"
-          }
-        },
-        {
-          "id": "net.wurstclient.zoom:wi_zoom:1.5-MC1.21.4@jar",
-          "name": "WI Zoom",
-          "type": "FabricMod",
-          "artifact": {
-            "size": 138865,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/fabricmods/required/WI-Zoom-1.5-MC1.21.4.jar",
-            "MD5": "c27684a574f4371b1b5d52e154612b2d"
-          }
-        },
-        {
-          "id": "options.txt",
-          "name": "options.txt",
-          "type": "File",
-          "artifact": {
-            "size": 5287,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/files/options.txt",
-            "path": "options.txt"
-          }
-        },
-        {
-          "id": "servers.dat",
-          "name": "servers.dat",
-          "type": "File",
-          "artifact": {
-            "size": 146,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/files/servers.dat",
-            "path": "servers.dat"
-          }
-        },
-        {
-          "id": "servers.dat_old",
-          "name": "servers.dat_old",
-          "type": "File",
-          "artifact": {
-            "size": 99,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/files/servers.dat_old",
-            "path": "servers.dat_old"
-          }
-        },
-        {
-          "id": "BSL_v8.2.09p1.zip",
-          "name": "BSL_v8.2.09p1.zip",
-          "type": "File",
-          "artifact": {
-            "size": 953414,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/files/shaderpacks/BSL_v8.2.09p1.zip",
-            "MD5": "612496c6a0ae763bc996f860ca6e1f2e",
-            "path": "shaderpacks/BSL_v8.2.09p1.zip"
-          }
-        },
-        {
-          "id": "ComplementaryReimagined_r5.1.1.zip",
-          "name": "ComplementaryReimagined_r5.1.1.zip",
-          "type": "File",
-          "artifact": {
-            "size": 409956,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/files/shaderpacks/ComplementaryReimagined_r5.1.1.zip",
-            "MD5": "36b4136593cac57d2f9aa651603b6e0f",
-            "path": "shaderpacks/ComplementaryReimagined_r5.1.1.zip"
-          }
-        },
-        {
-          "id": "ComplementaryUnbound_r5.1.1.zip",
-          "name": "ComplementaryUnbound_r5.1.1.zip",
-          "type": "File",
-          "artifact": {
-            "size": 409957,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/servers/mingcha-1.21.4/files/shaderpacks/ComplementaryUnbound_r5.1.1.zip",
-            "MD5": "da7fc4c86b12e65f4f70b3a9aaabae90",
-            "path": "shaderpacks/ComplementaryUnbound_r5.1.1.zip"
+            "size": 6689588,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/refurbished_furniture-forge-1.20.1-1.0.20.jar",
+            "MD5": "53bf35be2dc746e3fd7805a4e63a46a6"
           }
         }
       ]

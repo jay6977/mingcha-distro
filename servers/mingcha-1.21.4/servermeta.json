@@ -1,7 +1,7 @@
 {
   "$schema": "file:///D:/helios/mingcha/git/mingcha-distro/schemas/ServerMetaSchema.schema.json",
   "meta": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "mingcha",
     "description": "mingcha Running Minecraft 1.21.4 (Fabric v0.17.2)",
     "icon": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/serverIMG.png",
