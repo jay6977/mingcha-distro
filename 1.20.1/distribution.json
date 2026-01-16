@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "rss": "<LINK TO RSS FEED>",
   "discord": {
-    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "clientId": "1461742239033196584",
     "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+    "smallImageKey": "icon"
   },
   "servers": [
     {
@@ -12,13 +12,13 @@
       "name": "mingcha",
       "description": "mingcha Running Minecraft 1.20.1 (Forge v47.4.13)",
       "icon": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/serverIMG.png",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "address": "220.79.201.74",
       "minecraftVersion": "1.20.1",
       "discord": {
-        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+        "shortId": "mingcha",
+        "largeImageText": "밍챠 접속 중",
+        "largeImageKey": "backimg"
       },
       "mainServer": true,
       "autoconnect": true,
