@@ -12,13 +12,13 @@
       "name": "mingcha",
       "description": "mingcha Running Minecraft 1.20.1 (Forge v47.4.13)",
       "icon": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/serverIMG.png",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "address": "220.79.201.74",
       "minecraftVersion": "1.20.1",
       "discord": {
         "shortId": "mingcha",
-        "largeImageText": "밍챠 접속 중",
-        "largeImageKey": "backimg"
+        "largeImageText": "요리서버 접속 중",
+        "largeImageKey": "back"
       },
       "mainServer": true,
       "autoconnect": true,
@@ -473,6 +473,16 @@
           }
         },
         {
+          "id": "me.jellysquid.mods.sodium.client:embeddium:0.3.31+mc1.20.1@jar",
+          "name": "Embeddium",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1320675,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/embeddium-0.3.31+mc1.20.1.jar",
+            "MD5": "1dfb2ee49ce9ad5d484ff3eea0d628b7"
+          }
+        },
+        {
           "id": "vectorwing.farmersdelight:farmersdelight:1.20.1-1.2.9@jar",
           "name": "Farmer's Delight",
           "type": "ForgeMod",
@@ -513,6 +523,16 @@
           }
         },
         {
+          "id": "journeymap:journeymap:5.9.21@jar",
+          "name": "Journeymap",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 7139656,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/journeymap-1.20.1-5.9.21-forge.jar",
+            "MD5": "d0a9d6731a651870c9c97eb8724aba9a"
+          }
+        },
+        {
           "id": "generated.forgemod:modmenu:7.2.2@jar",
           "name": "Modmenu",
           "type": "ForgeMod",
@@ -520,6 +540,26 @@
             "size": 721366,
             "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/modmenu-7.2.2.jar",
             "MD5": "2629511a2d3b141d9f2a24dc9685637e"
+          }
+        },
+        {
+          "id": "net.irisshaders.iris:oculus:1.8.0@jar",
+          "name": "Oculus",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2851119,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/oculus-mc1.20.1-1.8.0.jar",
+            "MD5": "1dd891634ac21591b5a692471f112572"
+          }
+        },
+        {
+          "id": "su.plo.voice:plasmovoice:2.1.8@jar",
+          "name": "Plasmo Voice",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 12182458,
+            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/plasmovoice-forge-1.20.1-2.1.8.jar",
+            "MD5": "234d1a76ae25f5efc220ac879981c7e0"
           }
         },
         {
