@@ -12,7 +12,7 @@
       "name": "mingcha",
       "description": "mingcha Running Minecraft 1.20.1 (Forge v47.4.13)",
       "icon": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/serverIMG.png",
-      "version": "1.0.5",
+      "version": "1.0.4",
       "address": "220.79.201.74",
       "minecraftVersion": "1.20.1",
       "discord": {
@@ -450,16 +450,6 @@
             "size": 1181413,
             "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/cloth-config-11.1.136-forge.jar",
             "MD5": "ca5de5acbcb4a30c010aa6953bd7ef53"
-          }
-        },
-        {
-          "id": "generated.forgemod:cooking:1.0.0@jar",
-          "name": "Cooking",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 86304,
-            "url": "https://raw.githubusercontent.com/jay6977/mingcha-distro/main/1.20.1/servers/mingcha-1.20.1/forgemods/required/Cooking-1.0.0.jar",
-            "MD5": "fb92b90be7bffbce4c7acbfdf762b70e"
           }
         },
         {
